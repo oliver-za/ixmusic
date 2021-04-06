@@ -1,0 +1,37 @@
+nav {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top:10px;
+  h1 {
+    color: #C32B37;
+    margin-top:10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 32px;
+  }
+  button {
+    background: rgb(218, 218, 218);
+    border: none;
+    cursor: pointer; 
+    padding: 0.5rem;
+    transition: all 0.3s ease-out;
+    outline: none;
+    &:hover {
+      color: rgb(92, 92, 92);
+    }
+    svg { 
+      min-height: 30px;
+      min-width: 30px; 
+      margin-top:10px;
+    } 
+  }
+}
+@media screen and (max-width: 768px) {
+  nav {
+    button {
+      z-index: 10;
+    }
+  }
+}

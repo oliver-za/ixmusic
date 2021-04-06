@@ -1,0 +1,62 @@
+@import "./header"; 
+@import "./player";     
+@import "./playlist";
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+  background-color: rgb(218, 218, 218);
+}
+.App {
+  transition: all 0.5s ease;
+  background: rgb(218, 218, 218);
+} 
+
+.playlist-active {
+  margin-left: 30%;
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(24, 20, 20);
+}
+
+h3,
+h4 { 
+  font-weight: 400;
+  color: rgb(24, 20, 20);
+}
+
+.track-container {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+
+  img {
+    width: 20%;
+    border-radius: 2%;
+  }
+  h2 {
+    padding: 3rem 1rem 1rem 1rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .track-container {
+    img { 
+      width: 60%;
+    }
+  }
+}
+ 
+ 
